@@ -1,0 +1,26 @@
+{
+  "status": true,
+  "data": {
+    "filters": [
+      {
+        "name": "OFFERS",
+        "subItems": [
+          "Special Price",
+          "Buy More, Save more"
+        ]
+      },
+      {
+        "name": "DISCOUNT",
+        "subItems": ["70% or more", "60% or more","50% or more","40% or more"]
+      },
+      {
+        "name": "CUSTOMER RATINGS",
+        "subItems": ["4 &above","3 &above","2 &above","1 &above"]
+      },
+      {
+        "name": "GST INVOICE AVAILABLE",
+        "subItems": ["GST Invoice Available"]
+      }
+    ]
+  }
+}

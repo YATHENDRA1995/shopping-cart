@@ -1,0 +1,13 @@
+{
+  "status": true,
+  "data": [
+    {
+      "userName": "yathi",
+      "password": "yathi"
+    },
+    {
+      "userName": "suresh",
+      "password": "suresh"
+    }
+  ]
+}

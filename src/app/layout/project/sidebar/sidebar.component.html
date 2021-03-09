@@ -1,0 +1,17 @@
+<div class="p-4">
+  <div>
+    <span class="bold">Filters</span>
+    <hr>
+  </div>
+  <div>
+    <ng-container *ngFor="let data of sideBarData">
+      <span class="mb-2">{{ data.name }}</span>
+      <div class="form-check" *ngFor="let sub of data.subItems">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" value="">{{ sub }}
+        </label>
+      </div>
+      <br>
+    </ng-container>
+  </div>
+</div>

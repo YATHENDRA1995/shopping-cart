@@ -1,0 +1,9 @@
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+.card-header {
+  background-color: #2874F0;
+  color: white;
+}

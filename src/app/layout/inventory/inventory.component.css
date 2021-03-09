@@ -1,0 +1,9 @@
+.main_div {
+  height: calc(100vh - 56px);
+  overflow-y: auto;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}

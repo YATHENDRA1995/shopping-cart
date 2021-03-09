@@ -1,0 +1,19 @@
+.main_div {
+  height: calc(100vh - 56px);
+  overflow-y: auto;
+}
+
+.card-body img {
+  width: 350px;
+  height: 375px;
+}
+
+.rating {
+  border-radius: 10px;
+  padding: 1px 15px;
+  color: white;
+}
+
+.price {
+  font-size: 1.5rem;
+}

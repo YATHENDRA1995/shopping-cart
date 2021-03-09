@@ -1,0 +1,108 @@
+<div class="main_div">
+  <div class="container">
+    <div class="row">
+      <div class="col-9">
+        <div class="card mt-3 mb-3">
+          <div class="card-header bold">
+            My Cart ({{cartData.length}})
+            <button class="btn btn-primary float-right btn_sc" (click)="placeOrder()">Place Order</button>
+          </div>
+          <ng-container *ngIf="cartData.length">
+            <div class="card-body" *ngFor="let item of cartData; let i = index">
+              <div class="row">
+                <div class="col-2">
+                  <img [src]="item.imagePath" alt="image" />
+                  <div class="increment_div row">
+                    <div class="col-1">
+                      <button class="btn btn-light circle">-</button>
+                    </div>
+                    <div class="col-5 ml-2">
+                      <input type="number" class="form-control" value="1">
+                    </div>
+                    <div class="col-1 p-0">
+                      <button class="btn btn-light circle">+</button>
+                    </div>
+                    <div class="col-5"></div>
+                  </div>
+                </div>
+                <div class="col-5">
+                  <div>
+                    {{ item.name }}
+                  </div>
+                  <div class="lead">Description: {{ item.description }}</div>
+                  <div class="lead">Seller: {{ item.seller}}</div>
+                  <div>
+                    <span>{{ item.price | currency:'INR' }} &nbsp;</span>
+                    <span><s>{{ item.actualPrice | currency:'INR' }}</s>&nbsp;</span>
+                    <span class="sc_green bold">{{ item.discount }}% Off &nbsp;</span>
+                    <span class="sc_green bold">{{ item.offersCount }} offers available
+                      <i class="fas fa-info-circle"></i>
+                    </span>
+                  </div><br>
+                  <div>
+                    <span><b>SAVE FOR LATER</b> &nbsp;&nbsp;</span>
+                    <span><b>REMOVE</b></span>
+                  </div>
+                </div>
+                <div class="col-5">
+                  <p class="float-right">
+                    Delivery by {{ item. deliveryTime}} days | {{ item.deliveryCharge | currency: 'INR'}}
+                  </p>
+                </div>
+              </div>
+              <hr>
+            </div>
+          </ng-container>
+          <!-- <div class="card-footer">
+            <button class="btn btn-primary float-right">Place Order</button>
+          </div> -->
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card mt-3 mb-3">
+          <div class="card-header">
+            PRICE DETAILS
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-7">
+                Price ({{ cartData.length }} items)
+              </div>
+              <div class="col-5 pb-2">
+                <span class="float-right">{{cartRaw.priceTotal | currency:'INR' }}</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-7 pb-2">
+                Discount
+              </div>
+              <div class="col-5 pb-2 sc_green bold">
+                <span class="float-right">{{ cartRaw.discountTotal | currency:'INR' }}</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-7 pb-2">
+                Delivery Charges
+              </div>
+              <div class="col-5 pb-2 sc_green bold">
+                <span class="float-right">{{ cartRaw.deliveryTotal | currency:'INR' }}</span>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-8 pb-2">
+                Total Amount
+              </div>
+              <div class="col-4 pb-2">
+                {{ cartRaw.totalAmount | currency:'INR' }}
+              </div>
+            </div>
+            <hr>
+            <p class="sc_green bold">You will save {{ cartRaw.discountTotal | currency:'INR' }} on this order</p>
+          </div>
+        </div>
+        <p class="lead p-2">Safe and Secure Payments. Easy returns. 100% Authentic Products</p>
+      </div>
+    </div>
+  </div>
+</div>

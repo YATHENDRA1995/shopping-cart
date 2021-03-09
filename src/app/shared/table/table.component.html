@@ -1,0 +1,16 @@
+<table datatable [dtOptions]="dtOptions" *ngIf="tableData">
+  <thead>
+    <tr>
+      <th *ngFor="let header of tableData.headerContent">
+        {{ header.label}}
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of tableData.bodyContent; let i=index">
+      <td *ngFor="let header of tableData.headerContent">
+        {{ row[header.key]}}
+      </td>
+    </tr>
+  </tbody>
+</table>

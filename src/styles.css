@@ -1,1 +1,106 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Toaster */
+@import '~ngx-toastr/toastr';
+/* @import '~ngx-toastr/toastr-bs4-alert'; */
+
+/* Scroll bar CSS */
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.lead {
+  font-size: 0.95rem;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Colors */
+.sc_green {
+  color: #388E3C
+}
+
+.sc_blue {
+  color: #2874F0;
+}
+
+.sc_white {
+  color: #FFFFFF
+}
+
+/* Background Colors */
+.sc_blue_back {
+  background-color: #2874F0;
+}
+
+.sc_white_back {
+  background-color: #FFFFFF
+}
+
+.sc_orange_back {
+  background-color: #FB641B;
+}
+
+.sc_green_back {
+  background-color: #388E3C
+}
+
+/* Cards */
+
+.card-header {
+  background-color: #FFFFFF;
+}
+
+.card-footer {
+  background-color: #FFFFFF;
+}
+
+/* Buttons */
+
+/* Primary1 */
+.btn_sc {
+  background-color: #FB641B;
+  border-color: #FB641B;
+  color: white;
+}
+
+.btn_sc:hover {
+  background-color: #FB641B;
+  border-color: #FB641B;
+  color: white;
+}
+
+/* Primary2 */
+.btn_sc2 {
+  background-color: #FF9F00;
+  border-color: #FF9F00;
+  color: white;
+}
+
+.btn_sc2:hover {
+  background-color: #FF9F00;
+  border-color: #FF9F00;
+  color: white;
+}

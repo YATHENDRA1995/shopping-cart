@@ -1,0 +1,89 @@
+{
+  "status": true,
+  "data": {
+    "priceTotal": 3998,
+    "deliveryTotal": 200,
+    "discountTotal" : 2005,
+    "totalAmount": 1993,
+    "cartItems": [
+      {
+        "id": 1,
+        "imagePath": "assets/images/cart1.jpeg",
+        "name": "kgartell0",
+        "description": "I/I react d/t implanted urinary sphincter",
+        "seller": "Gevee",
+        "price": 193,
+        "actualPrice": 1389,
+        "discount": 36,
+        "deliveryCharge": 70,
+        "deliveryTime": 8,
+        "offersCount": 1
+      },
+      {
+        "id": 2,
+        "imagePath": "assets/images/cart2.jpeg",
+        "name": "jwallbutton1",
+        "description": "Unspecified superficial injury of right knee",
+        "seller": "Snaptags",
+        "price": 304,
+        "actualPrice": 4547,
+        "discount": 71,
+        "deliveryCharge": 70,
+        "deliveryTime": 5,
+        "offersCount": 4
+      },
+      {
+        "id": 3,
+        "imagePath": "assets/images/cart3.jpeg",
+        "name": "nchmiel2",
+        "description": "Atheroembolism of upper extremity",
+        "seller": "Meetz",
+        "price": 6,
+        "actualPrice": 4841,
+        "discount": 55,
+        "deliveryCharge": 46,
+        "deliveryTime": 3,
+        "offersCount": 2
+      },
+      {
+        "id": 4,
+        "imagePath": "assets/images/cart4.jpeg",
+        "name": "ccutbirth3",
+        "description": "Burn of third degree of left lower leg",
+        "seller": "Linktype",
+        "price": 165,
+        "actualPrice": 7287,
+        "discount": 16,
+        "deliveryCharge": 24,
+        "deliveryTime": 1,
+        "offersCount": 1
+      },
+      {
+        "id": 5,
+        "imagePath": "assets/images/cart5.jpeg",
+        "name": "gtilston4",
+        "description": "Nondisp fx of neck of left talus, subs for fx w delay heal",
+        "seller": "Abatz",
+        "price": 976,
+        "actualPrice": 2444,
+        "discount": 9,
+        "deliveryCharge": 23,
+        "deliveryTime": 7,
+        "offersCount": 2
+      },
+      {
+        "id": 6,
+        "imagePath": "assets/images/cart6.jpeg",
+        "name": "vcustard5",
+        "description": "Poisoning by other psychodysleptics, assault, init encntr",
+        "seller": "Viva",
+        "price": 840,
+        "actualPrice": 4035,
+        "discount": 85,
+        "deliveryCharge": 66,
+        "deliveryTime": 3,
+        "offersCount": 3
+      }
+    ]
+  }
+}

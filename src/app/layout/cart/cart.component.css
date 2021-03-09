@@ -1,0 +1,22 @@
+.main_div {
+  height: calc(100vh - 56px);
+  overflow: auto;
+}
+
+.container {
+  max-width: 1400px;
+}
+
+.card-body img {
+  width: 112px;
+  height: 56px;
+  margin: 28px 0px;
+}
+
+.increment_div input {
+  width: 48px;
+}
+
+.circle {
+  border-radius: 50%
+}

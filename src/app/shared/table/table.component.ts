@@ -1,0 +1,22 @@
+import { Component, Input, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-table',
+  templateUrl: './table.component.html',
+  styleUrls: ['./table.component.css']
+})
+export class TableComponent implements OnInit {
+
+  @Input() tableData;
+
+  dtOptions:DataTables.Settings = {
+    ordering: true,
+    searching: false,
+  }
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}

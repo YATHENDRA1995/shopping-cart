@@ -1,0 +1,52 @@
+<div class="main_div row pt-4 pb-4">
+  <div class="col-4">
+    <div class="card">
+      <div class="card-body">
+        <img [src]="pageData.imagePath" alt="image">
+      </div>
+    </div>
+    <div class="pt-4 text-center">
+      <button class="btn btn-secondary ml-2" (click)="navigateBack()">Back</button>
+      <button class="btn btn_sc2 ml-2">ADD TO CART</button>
+      <button class="btn btn_sc ml-2">BUY NOW</button>
+    </div>
+  </div>
+  <div class="col-8">
+    <div>{{ pageData.title}}</div>
+    <div class="pt-1">
+      <span class="rating sc_green_back">{{ pageData.rating}} &#9733;</span>&nbsp;
+      <span class="lead">{{ pageData.ratingCount }} Ratings</span>&nbsp;
+      <span class="lead">{{ pageData.reviewCount}} Reviews</span>
+    </div>
+    <div class="sc_green pt-1">
+      Special Price
+    </div>
+    <div class="pt-1">
+      <span class="price">{{ pageData.price | currency:'INR' }}</span> &nbsp;
+      <s>{{ pageData.actualPrice | currency:'INR' }}</s> &nbsp;
+      <span class="sc_green">{{ pageData.discount }}% Off</span>
+    </div>
+    <!-- Hard Coded Temporarily -->
+    <div class="pt-1">
+      <span class="bold">Available offers</span>
+    </div>
+    <div class="pt-1">
+      <span class="bold"><i class="fas fa-tag sc_green"></i>&nbsp;Special Price</span>
+      Get extra 14% off (price inclusive of discount)
+      <span class="sc_blue">T&C</span>
+    </div>
+    <div class="pt-1">
+      <span class="bold"><i class="fas fa-tag sc_green"></i>&nbsp;Bank Offer</span>
+      5% Unlimited Cashback on Flipkart Axis Bank Credit Card 
+      <span class="sc_blue">T&C</span>
+    </div>
+    <div class="pt-1">
+      <span class="bold"><i class="fas fa-tag sc_green"></i>&nbsp;Bank Offer</span>
+      10% Off on Bank of Baroda Master Card first time transaction
+      <span class="sc_blue">T&C</span>
+    </div><br>
+    <div class="pt-1">
+      <button class="btn btn_sc2" (click)="routeToCart()">GO TO CART</button>
+    </div>
+  </div>
+</div>
